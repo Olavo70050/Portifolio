@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Seção da foto -->
+  <div class="foto-container">
+    <img src="images/minha-foto.jpg" alt="Foto" class="foto">
+  </div>
+
+  <!-- Seção de descrição -->
+  <div class="descricao">
+    <p>Olá! Eu sou Olavo Fonseca, um estudante apaixonado por aprender e crescer a cada dia. Meu foco está em sempre buscar o melhor de mim!</p>
+  </div>
+
+  <!-- Seção de habilidades -->
+  <div class="habilidades">
+    <div class="habilidade" onclick="mostrarSignificado('paciencia')">Calma</div>
+    <div class="habilidade" onclick="mostrarSignificado('alegria')">Positividade</div>
+    <div class="habilidade" onclick="mostrarSignificado('estudo')">Exploração</div>
+    <div class="habilidade" onclick="mostrarSignificado('dedicacao')">Compromisso</div>
+  </div>
+  
+  <!-- Bolhas de água -->
+  <div class="bolhas">
+    <div class="bolha" onclick="mostrarPopup('habilidades')">Qualidades</div>
+    <div class="bolha" onclick="mostrarPopup('projetos')">Realizações</div>
+    <div class="bolha" onclick="mostrarPopup('preferencias')">Opiniões</div>
+    <div class="bolha" onclick="mostrarPopup('contato')">Conversa</div>
+  </div>
+
+  <!-- Popups -->
+  <div id="popup" class="popup">
+    <div class="popup-conteudo">
+      <span class="fechar" onclick="fecharPopup()">×</span>
+      <div id="popup-conteudo"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
